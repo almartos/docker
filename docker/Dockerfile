@@ -13,6 +13,7 @@ RUN yum -y install vim
 RUN yum -y install centos-release-scl
 RUN yum -y install rh-python36
 #RUN scl enable rh-python36 bash
+#borrar
 RUN echo "source scl_source enable rh-python36" >> /etc/bashrc
 RUN curl https://bootstrap.pypa.io/get-pip.py | python
 RUN git clone https://github.com/instabot-py/instabot.py.git
